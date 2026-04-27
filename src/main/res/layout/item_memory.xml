@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/glass_card">
+
+    <ImageView
+        android:id="@+id/memoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@string/image_preview"/>
+
+    <TextView
+        android:id="@+id/memoryPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/memoryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/memoryMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood"
+        android:textColor="#00F5A0"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/memoryNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note goes here..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:id="@+id/audioContainer"
+        android:background="@drawable/glass_card"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="Audio Note"/>
+
+        <Button
+            android:id="@+id/btnPlayAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶ Play Voice Note"
+            android:background="@android:color/transparent"
+            android:textColor="#00F5A0"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

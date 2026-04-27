@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_text">App is working </string>
+    <string name="your_memories">Your Memories</string>
+    <string name="back">Back</string>
+    <string name="app_name">Life Logger</string>
+    <string name="voice_typing">🎤 Voice Typing</string>
+    <string name="add_photo">📸 Add Photo</string>
+    <string name="image_preview">Image Preview</string>
+</resources>
